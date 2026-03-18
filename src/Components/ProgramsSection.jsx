@@ -1,5 +1,4 @@
 import React from "react";
-// import your icons here
 import icon1 from "../assets/icon-1.png";
 import icon2 from "../assets/icon-2.png";
 import icon3 from "../assets/icon-3.png";
@@ -31,32 +30,32 @@ const programs = [
 
 const ProgramsSection = () => {
   return (
-    <section className="w-full bg-[#f3f3f5] py-16 sm:py-24 px-6">
+    <section className="w-full bg-[#f3f3f5] py-12 sm:py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto text-center">
 
         {/* HEADING */}
-        <h2 className="text-3xl sm:text-6xl font-bold text-gray-800 leading-tight">
-          LEARN THE SKILLS THAT POWER <br />
+        <h2 className="text-[26px] sm:text-6xl font-bold text-gray-800 leading-snug sm:leading-tight">
+          LEARN THE SKILLS THAT POWER <br className="hidden sm:block" />
           TODAY’S ENTERTAINMENT INDUSTRY
         </h2>
 
         {/* SUBTEXT */}
-        <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
+        <p className="mt-3 sm:mt-4 text-gray-500 max-w-md sm:max-w-2xl mx-auto text-sm sm:text-base">
           Programs designed with real studio workflows. Every program focuses on
           portfolio building, production pipelines, and studio readiness.
         </p>
 
         {/* CARDS */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
           {programs.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 text-left border border-gray-200 hover:shadow-lg transition"
+              className="bg-white rounded-2xl p-5 sm:p-6 text-left border border-gray-200 hover:shadow-lg transition"
             >
               {/* ICON */}
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg mb-4">
-                <img src={item.icon} alt="icon" className="w-12" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-blue-50 rounded-lg mb-3 sm:mb-4">
+                <img src={item.icon} alt="icon" className="w-16 sm:w-12" />
               </div>
 
               {/* TITLE */}
@@ -65,7 +64,7 @@ const ProgramsSection = () => {
               </h3>
 
               {/* DESC */}
-              <p className="mt-3 text-sm sm:text-base text-gray-500 leading-relaxed">
+              <p className="mt-2 sm:mt-3 text-md sm:text-base text-gray-500 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -74,13 +73,16 @@ const ProgramsSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-12">
-          <button className="px-8 py-3 rounded-full text-sm sm:text-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg hover:opacity-90 transition">
+        <div className="mt-10 sm:mt-12">
+          <button className="w-auto sm:w-auto max-w-md sm:max-w-none px-6 sm:px-8 py-3 rounded-full text-base sm:text-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg hover:opacity-90 transition">
             Explore Our Programs
           </button>
         </div>
 
-        <ProgressLoad />
+        {/* Progress */}
+        <div className="mt-2 sm:mt-6 flex justify-center">
+          <ProgressLoad />
+        </div>
 
       </div>
     </section>

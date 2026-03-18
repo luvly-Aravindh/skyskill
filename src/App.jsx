@@ -4,6 +4,7 @@ import CreatorSection from "./Components/CreatorSection";
 import ProgramsSection from "./Components/ProgramsSection";
 import WhyChooseSection from "./Components/WhyChooseSection";
 import EcosystemSection from "./Components/EcosystemSection";
+import CareersSection from "./Components/CareersSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <ProgramsSection />
     <WhyChooseSection />
     <EcosystemSection />
+    <CareersSection />
     </>
   );
 }

@@ -7,23 +7,22 @@ import gameIcon from "../assets/game.png";
 import netflix from "../assets/netflix.png";
 import pogo from "../assets/pogo.png";
 import voot from "../assets/voot.png";
-// add others as needed
 
 export default function EcosystemSection() {
   return (
-    <section className="bg-black text-white py-20 px-6">
+    <section className="bg-black text-white py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          PART OF THE RELIANCE <br />
+        <h2 className="text-[26px] sm:text-6xl font-bold leading-snug sm:leading-tight">
+          PART OF THE RELIANCE <br className="hidden sm:block" />
           ENTERTAINMENT ECOSYSTEM
         </h2>
 
         {/* Subtext */}
-        <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+        <p className="mt-4 sm:mt-6 text-gray-400 max-w-md sm:max-w-3xl mx-auto text-xs sm:text-lg leading-relaxed">
           When you join the academy, you are connected to a much bigger creative network.
-          <br />
+          <br className="hidden sm:block" />
           This ecosystem gives students{" "}
           <span className="text-white font-medium">
             rare exposure to real entertainment production environments.
@@ -31,80 +30,91 @@ export default function EcosystemSection() {
         </p>
 
         {/* Cards */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+        <div className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
 
           {/* Card 1 */}
-          <div className="bg-[#0b0b0b] border border-gray-800 rounded-2xl p-8 text-left hover:border-gray-600 transition">
-            <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-red-500/10 mb-6">
-              <img src={filmIcon} alt="" className="w-6 h-6" />
+          <div className="rounded-2xl p-[1px] bg-gradient-to-b from-gray-500 via-gray-500/20 to-transparent">
+            <div className="bg-[#0b0b0b] rounded-2xl p-6 sm:p-8 h-full text-left">
+
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg bg-red-500/10 mb-4 sm:mb-6">
+                <img src={filmIcon} alt="" className="w-8 sm:w-10" />
+              </div>
+
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                Reliance Entertainment
+              </h3>
+
+              <p className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">300+ films</p>
+
+              <p className="text-gray-400 text-xs sm:text-sm">
+                distributed globally and <br className="hidden sm:block" /> presence in 100+ countries.
+              </p>
+
             </div>
-
-            <h3 className="text-lg font-semibold mb-4">
-              Reliance Entertainment
-            </h3>
-
-            <p className="text-3xl font-bold mb-2">300+ films</p>
-
-            <p className="text-gray-400 text-sm">
-              distributed globally and <br /> presence in 100+ countries.
-            </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#0b0b0b] border border-gray-800 rounded-2xl p-8 text-left hover:border-gray-600 transition">
-            <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-indigo-500/10 mb-6">
-              <img src={animationIcon} alt="" className="w-6 h-6" />
-            </div>
+          <div className="rounded-2xl p-[1px] bg-gradient-to-b from-gray-500 via-gray-500/20 to-transparent">
+            <div className="bg-[#0b0b0b] rounded-2xl p-6 sm:p-8 h-full text-left">
 
-            <h3 className="text-lg font-semibold mb-4">
-              Reliance Animation Studios
-            </h3>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg bg-indigo-500/10 mb-4 sm:mb-6">
+                <img src={animationIcon} alt="" className="w-8 sm:w-10" />
+              </div>
 
-            <p className="text-gray-400 text-sm mb-4">
-              Creators behind shows like:
-            </p>
+              <h3 className="text-base sm:text-xl font-semibold mb-3 sm:mb-4">
+                Reliance Animation Studios
+              </h3>
 
-            <ul className="text-sm space-y-1 mb-6">
-              <li>• Little Singham</li>
-              <li>• Golmaal Jr</li>
-              <li>• Little Krishna</li>
-              <li>• Smashing Simmba</li>
-            </ul>
+              <p className="text-gray-400 text-xs sm:text-md mb-3 sm:mb-4">
+                Creators behind shows like:
+              </p>
 
-            <p className="text-gray-400 text-xs mb-3">
-              Streaming platforms include:
-            </p>
+              <ul className="text-xs sm:text-sm space-y-1 mb-4 sm:mb-6">
+                <li>• Little Singham</li>
+                <li>• Golmaal Jr</li>
+                <li>• Little Krishna</li>
+                <li>• Smashing Simmba</li>
+              </ul>
 
-            {/* Logos */}
-            <div className="flex items-center gap-3 flex-wrap">
-              <img src={netflix} alt="" className="h-5" />
-              <img src={pogo} alt="" className="h-5" />
-              <img src={voot} alt="" className="h-5" />
+              <p className="text-gray-400 text-[11px] sm:text-md mb-2 sm:mb-3">
+                Streaming platforms include:
+              </p>
+
+              <div className="flex items-center gap-3 flex-wrap">
+                <img src={netflix} alt="" className="h-4 sm:h-5" />
+                <img src={pogo} alt="" className="h-4 sm:h-5" />
+                <img src={voot} alt="" className="h-4 sm:h-5" />
+              </div>
+
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#0b0b0b] border border-gray-800 rounded-2xl p-8 text-left hover:border-gray-600 transition">
-            <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-green-500/10 mb-6">
-              <img src={gameIcon} alt="" className="w-6 h-6" />
+          <div className="rounded-2xl p-[1px] bg-gradient-to-b from-gray-500 via-gray-500/20 to-transparent">
+            <div className="bg-[#0b0b0b] rounded-2xl p-6 sm:p-8 h-full text-left">
+
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg bg-green-500/10 mb-4 sm:mb-6">
+                <img src={gameIcon} alt="" className="w-8 sm:w-10" />
+              </div>
+
+              <h3 className="text-base sm:text-xl font-semibold mb-3 sm:mb-4">
+                Reliance Games
+              </h3>
+
+              <p className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">1200+ games</p>
+
+              <p className="text-gray-400 text-xs sm:text-md">
+                with millions of players worldwide.
+              </p>
+
             </div>
-
-            <h3 className="text-lg font-semibold mb-4">
-              Reliance Games
-            </h3>
-
-            <p className="text-3xl font-bold mb-2">1200+ games</p>
-
-            <p className="text-gray-400 text-sm">
-              with millions of players worldwide.
-            </p>
           </div>
 
         </div>
 
         {/* CTA */}
-        <div className="mt-16">
-          <button className="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg hover:opacity-90 transition">
+        <div className="mt-12 sm:mt-16">
+          <button className="w-auto sm:w-auto max-w-md sm:max-w-none px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-base sm:text-xl font-medium shadow-lg hover:opacity-90 transition">
             Discover Industry Opportunities
           </button>
         </div>

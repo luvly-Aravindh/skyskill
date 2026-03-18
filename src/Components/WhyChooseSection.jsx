@@ -1,134 +1,112 @@
 import React from "react";
 
-import filmIcon from "../assets/film.png";
-import animationIcon from "../assets/animation.png";
-import gameIcon from "../assets/game.png";
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
 
-import netflix from "../assets/netflix.png";
-import pogo from "../assets/pogo.png";
-import voot from "../assets/voot.png";
+import icon1 from "../assets/icon-11.png";
+import icon2 from "../assets/icon-12.png";
+import icon3 from "../assets/icon-13.png";
+import icon4 from "../assets/icon-14.png";
 
-export default function EcosystemSection() {
+const features = [
+  {
+    icon: icon1,
+    title: "Industry Mentors",
+    desc: "Learn directly from professionals with real animation and VFX studio experience.",
+  },
+  {
+    icon: icon2,
+    title: "Production-Focused Curriculum",
+    desc: "Courses designed around real workflows used in top-tier animation studios.",
+  },
+  {
+    icon: icon3,
+    title: "Studio Exposure",
+    desc: "Get insights and mentorship from experts working with Reliance Animation Studios.",
+  },
+  {
+    icon: icon4,
+    title: "Career-Focused Learning",
+    desc: "Every project you build contributes to a portfolio that studios want to see.",
+  },
+];
+
+export default function WhyChooseSection() {
   return (
-    <section className="bg-black text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-[#f5f6f8] py-12 sm:py-20 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 sm:gap-16 items-center">
 
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          PART OF THE RELIANCE <br />
-          ENTERTAINMENT ECOSYSTEM
-        </h2>
+        {/* LEFT GRID */}
+        <div className="flex justify-center lg:justify-start items-center h-full">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 w-full max-w-sm sm:max-w-none">
 
-        {/* Subtext */}
-        <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-          When you join the academy, you are connected to a much bigger creative network.
-          <br />
-          This ecosystem gives students{" "}
-          <span className="text-white font-medium">
-            rare exposure to real entertainment production environments.
-          </span>
-        </p>
+            {/* BOX 1 */}
+            <div className="relative h-[160px] sm:h-[280px] rounded-2xl overflow-hidden shadow-md">
+              <img src={img1} alt="" className="w-full h-full object-cover" />
+            </div>
 
-        {/* Cards */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+            {/* BOX 2 */}
+            <div className="relative h-[160px] sm:h-[280px] rounded-2xl overflow-hidden shadow-md sm:-top-20">
+              <img src={img2} alt="" className="w-full h-full object-cover" />
+            </div>
 
-          {/* Card 1 */}
-          <div className="relative bg-[#0b0b0b] rounded-2xl p-8 text-left overflow-hidden">
+            {/* BOX 3 */}
+            <div className="relative h-[160px] sm:h-[280px] rounded-2xl overflow-hidden shadow-md">
+              <img src={img3} alt="" className="w-full h-full object-cover" />
+            </div>
 
-            {/* Custom Borders */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gray-700" />
-            <div className="absolute top-0 left-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-            <div className="absolute top-0 right-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-
-            <div className="relative z-10">
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-red-500/10 mb-6">
-                <img src={filmIcon} alt="" className="w-6 h-6" />
-              </div>
-
-              <h3 className="text-lg font-semibold mb-4">
-                Reliance Entertainment
-              </h3>
-
-              <p className="text-3xl font-bold mb-2">300+ films</p>
-
-              <p className="text-gray-400 text-sm">
-                distributed globally and <br /> presence in 100+ countries.
+            {/* BOX 4 */}
+            <div className="relative h-[160px] sm:h-[280px] bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-center px-4 sm:px-6 shadow-lg sm:-top-20">
+              <p className="text-white text-sm sm:text-lg font-semibold leading-snug">
+                Build a portfolio <br className="hidden sm:block" />
+                that studios <br className="hidden sm:block" />
+                want to see.
               </p>
             </div>
+
           </div>
-
-          {/* Card 2 */}
-          <div className="relative bg-[#0b0b0b] rounded-2xl p-8 text-left overflow-hidden">
-
-            {/* Custom Borders */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gray-700" />
-            <div className="absolute top-0 left-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-            <div className="absolute top-0 right-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-
-            <div className="relative z-10">
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-indigo-500/10 mb-6">
-                <img src={animationIcon} alt="" className="w-6 h-6" />
-              </div>
-
-              <h3 className="text-lg font-semibold mb-4">
-                Reliance Animation Studios
-              </h3>
-
-              <p className="text-gray-400 text-sm mb-4">
-                Creators behind shows like:
-              </p>
-
-              <ul className="text-sm space-y-1 mb-6">
-                <li>• Little Singham</li>
-                <li>• Golmaal Jr</li>
-                <li>• Little Krishna</li>
-                <li>• Smashing Simmba</li>
-              </ul>
-
-              <p className="text-gray-400 text-xs mb-3">
-                Streaming platforms include:
-              </p>
-
-              <div className="flex items-center gap-3 flex-wrap">
-                <img src={netflix} alt="" className="h-5" />
-                <img src={pogo} alt="" className="h-5" />
-                <img src={voot} alt="" className="h-5" />
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="relative bg-[#0b0b0b] rounded-2xl p-8 text-left overflow-hidden">
-
-            {/* Custom Borders */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gray-700" />
-            <div className="absolute top-0 left-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-            <div className="absolute top-0 right-0 h-full w-px bg-gradient-to-b from-gray-700 via-gray-500/40 to-transparent" />
-
-            <div className="relative z-10">
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-green-500/10 mb-6">
-                <img src={gameIcon} alt="" className="w-6 h-6" />
-              </div>
-
-              <h3 className="text-lg font-semibold mb-4">
-                Reliance Games
-              </h3>
-
-              <p className="text-3xl font-bold mb-2">1200+ games</p>
-
-              <p className="text-gray-400 text-sm">
-                with millions of players worldwide.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-        {/* CTA */}
-        <div className="mt-16">
-          <button className="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg hover:opacity-90 transition">
-            Discover Industry Opportunities
+        {/* RIGHT CONTENT */}
+        <div className="flex flex-col justify-between h-full max-w-2xl text-center lg:text-left">
+
+          {/* TOP CONTENT */}
+          <div>
+            <h2 className="text-[26px] sm:text-5xl font-bold text-gray-800 leading-snug sm:leading-tight mb-6 sm:mb-10">
+              WHY STUDENTS CHOOSE <br className="hidden sm:block" />
+              RELIANCE ANIMATION <br className="hidden sm:block" />
+              ACADEMY
+            </h2>
+
+            <div className="space-y-6 sm:space-y-8">
+              {features.map((item, index) => (
+                <div key={index} className="flex items-start gap-3 sm:gap-4 text-left">
+
+                  {/* ICON */}
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-blue-100 shrink-0">
+                    <img src={item.icon} alt="" className="w-8 sm:w-12" />
+                  </div>
+
+                  {/* TEXT */}
+                  <div>
+                    <h4 className="text-sm sm:text-lg font-semibold text-gray-800">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-500 text-xs sm:text-sm mt-1 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <button className="mt-8 sm:mt-10 w-auto sm:w-auto max-w-sm sm:max-w-none mx-auto lg:mx-0 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-base font-semibold shadow-lg hover:scale-105 transition">
+            Start Your Animation Career
           </button>
+
         </div>
 
       </div>
