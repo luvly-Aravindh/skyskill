@@ -1,7 +1,7 @@
-import { Suspense, lazy } from "react";
 import "./App.css";
-import HeroSection from "./Components/HeroSection"
+import HeroSection from "./Components/HeroSection";
 import CreatorSection from "./Components/CreatorSection";
+import ProgramsSection from "./Components/ProgramsSection";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       {/* HERO — LOAD IMMEDIATELY */}
     <HeroSection  />
     <CreatorSection />
+    <ProgramsSection />
     </>
   );
 }
