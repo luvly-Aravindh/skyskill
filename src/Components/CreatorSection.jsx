@@ -35,7 +35,7 @@ const CreatorSection = () => {
             production-ready work. That’s exactly what you learn here.
           </p>
 
-          <button className="mt-8 px-6 py-3 rounded-full text-sm sm:text-base font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:opacity-90 transition">
+          <button className="mt-8 px-6 py-3 rounded-full text-sm sm:text-base font-semibold bg-[#5338FF] hover:opacity-90 transition">
             Start Your Animation Career
           </button>
 

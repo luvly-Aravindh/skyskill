@@ -51,7 +51,7 @@ const HeroSection = () => {
 
         {/* BUTTONS */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <button className="px-6 py-3 rounded-full text-sm sm:text-xl font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:opacity-90 transition">
+          <button className="px-6 py-3 rounded-full text-sm sm:text-xl font-semibold bg-[#5338FF] hover:opacity-90 transition">
             Book Your Free Career Orientation
           </button>
 
